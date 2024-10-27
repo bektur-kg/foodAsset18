@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4a4e87;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 1px;
+  }
+  
+  .navbar ul li {
+    background-color: #24243569;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 20px;
+  }
+
+  .navbar ul li.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #151535f8;
+  }
+
+  .navbar ul li.active img {
+    opacity: 1;
+  }
+
+  .navbar ul li img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  .navbar ul li:hover {
+   background: #242435;
+  }
+
+  .navbar ul li.active:hover {
+    background-color: #151535f8;
+  }
+  
+  .card {
+    margin-top: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card .img-container img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .img-container{
+    position: relative;
+    color: white;
+  }
+
+  .img-container .location{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    z-index: 2;
+    text-shadow: 0 0 10px #0000009f;
+  }
+
+  .img-container .location h2{
+    font-size: 25px;
+  }
+
+  .img-container .location img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .img-container .location span{
+    font-size: 15px;
+  }
+  
+  .food-list {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .food-list li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .food-list li:hover span {
+    scale: 1.2;
+    transition: 0.3s all;
+
+  }
+  
+  .food-list li:last-child {
+    border-bottom: none;
+  }
